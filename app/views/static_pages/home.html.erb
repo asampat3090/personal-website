@@ -1,0 +1,51 @@
+<div id="myCarousel" class="carousel slide">
+
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+
+    <div class="active item">
+      <%= image_tag("homepage_carousel/UC_Berkeley_sf_view.jpeg", :alt => "Berkeley") %>
+      <div class="carousel-caption">
+        <p>Beautiful view of the Campanile, Berkeley, and SF.</p>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag("homepage_carousel/sather_gate.jpeg", alt: "Berkeley", ) %>
+      <div class="carousel-caption">
+        <p>The hustle and bustle of Sproul Plaza</p>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag("homepage_carousel/Stanford_Memorial_Church.png", alt:  "Stanford", ) %>
+      <div class="carousel-caption">
+        <p>The other school across the Bay - beautiful in it's own way.</p>
+      </div>
+    </div>
+
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
+
+<div class="center hero-unit">
+  <h1>Anand Sampat</h1>
+
+  <h2>
+    This is the home page for the
+    <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
+    sample application.
+  </h2>
+
+  <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.carousel').carousel();
+    });
+</script>
+
