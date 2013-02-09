@@ -1,3 +1,13 @@
+<div class="center hero-unit" >
+  <h1>Anand Sampat</h1>
+
+  <h2>
+    I dream about efficiency.
+  </h2>
+
+  <%= link_to "My Projects", projects_path, class: "btn btn-large btn-primary" %>
+      </div>
+
 <div id="myCarousel" class="carousel slide">
 
   <!-- Carousel items -->
@@ -28,17 +38,21 @@
   <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 </div>
 
-<div class="center hero-unit">
-  <h1>Anand Sampat</h1>
+<div class="row">
+  <div class id="span8">
 
-  <h2>
-    This is the home page for the
-    <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-    sample application.
-  </h2>
+  </div>
+  <div class="span4">
+    <a class="twitter-timeline" href="https://twitter.com/AnandSampat" data-widget-id="299970850923364352">Tweets by @AnandSampat</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </div>
 
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
 </div>
+
+
+
+
+
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
@@ -48,4 +62,3 @@
         $('.carousel').carousel();
     });
 </script>
-
