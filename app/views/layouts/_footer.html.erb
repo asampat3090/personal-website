@@ -4,10 +4,11 @@
   </small>
   <nav>
     <ul>
-      <li><%= link_to "About",   about_path %></li>
-      <!-- add in link to blog after -->
-      <li><a href="#">Blog</a></li>
-      <li><%= link_to "Contact", contact_path %></li>
+      <li class="<%= 'active' if current_page?(about_path) %>"><%= link_to "About", about_path %></li>
+      <li class="<%= 'active' if current_page?(projects_path) %>"><%= link_to "Projects", projects_path %></li>
+      <li class="<%= 'active' if current_page?(reading_path) %>"><%=  link_to "Reading", reading_path %></li>
+      <li class="<%= 'active' if current_page?(contact_path) %>"><%= link_to "Contact", contact_path %></li>
+      <li class="<%= 'active' if current_page?(blog_path) %>"><%= link_to "Blog", blog_path %></li>
     </ul>
   </nav>
 </footer>
