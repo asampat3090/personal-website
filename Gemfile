@@ -3,10 +3,7 @@ source 'https://rubygems.org'
 gem 'rails'
 gem 'bootstrap-sass', '2.1'
 
-# Use bloggy gem to create jekyll based blog
-# https://blog.engineyard.com/2012/introducing-bloggy-a-simple-way-to-add-a-jekyll-blog-to-any-rails-application/
-# gem 'bloggy'
-
+gem "monologue"
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
