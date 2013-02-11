@@ -1,19 +1,17 @@
 <% provide(:title, 'Blog') %>
-<h1>Blog</h1>
-<p>
-
-</p>
+<%= load_blog_feed%>
+<h1>Blog - <%= @feed_title %></h1>
 
 <div class="row-fluid">
   <div class="span8">
-     Blog roll here
+    <%= render partial: "blog_post" %>
   </div>
   <div class="span4">
-    Some history of blog posts
+    <!--Some history of blog posts   -->
     <br />
     <a class="twitter-timeline" width="1000" href="https://twitter.com/AnandSampat" data-widget-id="299970850923364352">Tweets by @AnandSampat</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     <br />
-    Facebook widget
+    <!-- Facebook widget   -->
   </div>
 </div>

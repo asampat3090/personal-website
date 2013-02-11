@@ -1,0 +1,12 @@
+<%= load_blog_feed%>
+
+<% @blog_posts.each do |entry| %>
+<div class = "span8">
+  <h2> <%= entry.title %> </h2>
+  <%=entry.published%>
+  <%= entry.content.html_safe %> <br />
+  <% entry.categories.each do |category| %>
+  <%= category %>,
+  <% end %>
+</div>
+<% end %>
