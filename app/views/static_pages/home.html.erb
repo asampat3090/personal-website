@@ -6,7 +6,7 @@
   </h2>
 
   <%= link_to "My Projects", projects_path, class: "btn btn-large btn-primary" %>
-      </div>
+</div>
 
 <div id="myCarousel" class="carousel slide">
 
@@ -14,19 +14,19 @@
   <div class="carousel-inner">
 
     <div class="active item">
-      <%= image_tag("homepage_carousel/UC_Berkeley_sf_view.jpeg", :alt => "Berkeley") %>
+      <%= image_tag("homepage_carousel/UC_Berkeley_sf_view.jpeg", alt: "Berkeley") %>
       <div class="carousel-caption">
         <p>Beautiful view of the Campanile, Berkeley, and SF.</p>
       </div>
     </div>
     <div class="item">
-      <%= image_tag("homepage_carousel/sather_gate.jpeg", alt: "Berkeley", ) %>
+      <%= image_tag("homepage_carousel/sather_gate.jpeg", alt: "Berkeley") %>
       <div class="carousel-caption">
         <p>The hustle and bustle of Sproul Plaza</p>
       </div>
     </div>
     <div class="item">
-      <%= image_tag("homepage_carousel/Stanford_Memorial_Church.png", alt:  "Stanford", ) %>
+      <%= image_tag("homepage_carousel/Stanford_Memorial_Church.png", alt:  "Stanford") %>
       <div class="carousel-caption">
         <p>The other school across the Bay - beautiful in it's own way.</p>
       </div>
@@ -34,19 +34,13 @@
 
   </div>
   <!-- Carousel nav -->
-  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+  <a id="cl" class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a id="cr" class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 </div>
 
 
-
-
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
-<script src="js/bootstrap.min.js"></script>
 <script>
-    $(document).ready(function(){
-        $('.carousel').carousel();
+    $('#myCarousel').carousel({
+        interval: 5000
     });
 </script>
