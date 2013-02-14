@@ -2,9 +2,17 @@
 
 <% @blog_posts.each do |entry| %>
 <div class = "span8">
-  <h2> <%= entry.title %> </h2>
-  <%=entry.published%>
-  <%= entry.content.html_safe %> <br />
+  <a href=<%=entry.url%>><h3 class = "blog"> <%= entry.title %> </h3></a>
+  <h4><%=entry.published.strftime("%m/%d/%Y at %I:%M%p")%></h6>
+  <br />
+  <!-- Twitter Share Button -->
+  <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  <!-- end Twitter Share Button -->
+  <p>
+    <%= simple_format entry.content.html_safe %>
+  </p>
+  <br />
   <% entry.categories.each do |category| %>
   <%= category %>,
   <% end %>
