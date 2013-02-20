@@ -1,0 +1,29 @@
+<% provide(:title, 'Contact') %>
+<h1>Contact</h1>
+
+<%= form_for @message, :url => contact_path, :html => {:class => "form-horizontal"} do |form| %>
+    <fieldset>
+      <div class="control-group">
+        <%= form.label :name %>
+        <%= form.text_field :name, class: 'span12' %>
+      </div>
+
+      <div class="control-group">
+        <%= form.label :email %>
+        <%= form.text_field :email, class: 'span12' %>
+      </div>
+      <div class="control-group">
+        <%= form.label :subject %>
+        <%= form.text_field :subject, class: 'span12' %>
+      </div>
+
+      <div class="control-group">
+        <%= form.label :body %>
+        <%= form.text_area :body, class: 'span12' %>
+      </div>
+    </fieldset>
+
+    <fieldset class="actions">
+      <%= form.submit "Send", class: 'span12' %>
+    </fieldset>
+<% end %>

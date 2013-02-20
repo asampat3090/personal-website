@@ -4,6 +4,8 @@ gem 'rails'
 gem 'bootstrap-sass', '2.1'
 gem 'feedzirra'
 
+
+
 group :development, :test do
   gem 'sqlite3', '1.3.5'
   gem 'rspec-rails', '2.11.0'

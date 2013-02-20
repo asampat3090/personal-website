@@ -65,4 +65,19 @@ AnandSampat::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
+  # for contact page
+  config.action_mailer.default_url_options = {
+      :host => 'http://calm-bayou-7104.herokuapp.com/'
+  }
+
+  ActionMailer::Base.smtp_settings = {
+      :address              => "smtp.gmail.com",
+      :port                 => 587,
+      :domain               => "smtp.gmail.com",
+      :user_name            => "asampat3090@gmail.com",
+      :password             => "poop",
+      :authentication       => :plain,
+      :enable_starttls_auto => true
+  }
+
 end
