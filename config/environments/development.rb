@@ -20,6 +20,16 @@ AnandSampat::Application.configure do
   # Added for the contact page
   config.action_mailer.default_url_options = { host: 'localhost' }
 
+  ActionMailer::Base.smtp_settings = {
+      :address              => "smtp.gmail.com",
+      :port                 => 587,
+      :domain               => "smtp.gmail.com",
+      :user_name            => "asampat3090@gmail.com",
+      :password             => "Mynameislulu3090!",
+      :authentication       => :plain,
+      :enable_starttls_auto => true
+  }
+
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log
 

@@ -75,7 +75,7 @@ AnandSampat::Application.configure do
       :port                 => 587,
       :domain               => "smtp.gmail.com",
       :user_name            => "asampat3090@gmail.com",
-      :password             => "poop",
+      :password             => "Mynameislulu3090!",
       :authentication       => :plain,
       :enable_starttls_auto => true
   }
