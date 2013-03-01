@@ -2,7 +2,7 @@
   <div class="navbar">
     <div class="navbar-inner">
 
-      <%= link_to "A.S.", '#', id: "logo" %>
+      <%= link_to image_tag("homepage/anand_logo.png", alt: "personal logo", size: "125x45"), '#', id: "logo" %>
       <ul class="nav pull-right">
         <li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Home", root_path %></li>
         <li class="<%= 'active' if current_page?(about_path) %>"><%= link_to "About", about_path %></li>
