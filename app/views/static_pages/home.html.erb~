@@ -1,0 +1,61 @@
+<div class="center hero-unit" >
+  <h1>
+    <%= image_tag("homepage/berkeley_logo.png", alt: "UC Berkeley Logo - Cal", size: "150x150") %>
+    Anand Sampat
+    <%= image_tag("homepage/stanford_logo.png", alt: "Stanford Logo - S", size: "100x100") %>
+  </h1>
+
+  <h2>
+    I dream about efficiency.
+  </h2>
+
+  <!-- INSERT CODE FOR GITHUB, LINKEDIN, TWITTER, FB HERE -->
+  <div class="pagination-centered">
+    <%= link_to image_tag("homepage/linkedin.png", alt: "linkedin link", size: "100x100"), "http://www.linkedin.com/in/anandsampat/"%>
+    <%= link_to image_tag("homepage/twitter.png", alt: "twitter link", size: "100x100"), "http://www.twitter.com/AnandSampat" %>
+    <%= link_to image_tag("homepage/quora.png", alt: "quora link", size: "100x100"), "http://www.quora.com/Anand-Sampat" %>
+    <%= link_to image_tag("homepage/github.png", alt: "github link", size: "100x100"), "http://www.github.com/asampat3090" %>
+  </div>
+  
+  <br />
+
+
+  <%= link_to "My Projects", projects_path, class: "btn btn-large btn-primary" %>
+</div>
+
+<div id="myCarousel" class="carousel slide">
+
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+
+    <div class="active item">
+      <%= image_tag("homepage_carousel/UC_Berkeley_sf_view.jpeg", alt: "Berkeley") %>
+      <div class="carousel-caption">
+        <p>Beautiful view of the Campanile, Berkeley, and SF.</p>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag("homepage_carousel/sather_gate.jpeg", alt: "Berkeley") %>
+      <div class="carousel-caption">
+        <p>The hustle and bustle of Sproul Plaza</p>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag("homepage_carousel/Stanford_Memorial_Church.png", alt:  "Stanford") %>
+      <div class="carousel-caption">
+        <p>The other school across the Bay - beautiful in it's own way.</p>
+      </div>
+    </div>
+
+  </div>
+  <!-- Carousel nav -->
+  <a id="cl" class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a id="cr" class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
+
+
+<script>
+    $('#myCarousel').carousel({
+        interval: 5000
+    });
+</script>
