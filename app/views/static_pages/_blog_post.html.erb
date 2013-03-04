@@ -1,7 +1,7 @@
 <%= load_blog_feed%>
 
 <% @blog_posts.each do |entry| %>
-<div class = "span8">
+<div>
   <a href=<%=entry.url%>><h3 class = "blog"> <%= entry.title %> </h3></a>
   <h4><%=entry.published.strftime("%m/%d/%Y at %I:%M%p")%></h6>
   <br />
