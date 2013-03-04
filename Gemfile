@@ -4,7 +4,8 @@ gem 'rails'
 gem 'bootstrap-sass', '2.1'
 gem 'feedzirra'
 
-
+# check performance with newrelic
+gem 'newrelic_rpm'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
