@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails'
 gem 'bootstrap-sass', '2.1'
 gem 'feedzirra'
+gem 'embedly'
 
 # check performance with newrelic
 gem 'newrelic_rpm'

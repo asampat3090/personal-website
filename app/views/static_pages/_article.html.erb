@@ -1,0 +1,18 @@
+<% require 'embedly' %>
+<% require 'json' %>
+<% @articles.each do |article| %>
+    <ul class="thumbnails">
+      <li class="span12">
+        <% #embedly_api = Embedly::API.new :key => '8a3c9238c6504b64816fcfc54fc2fa89', :user_agent => 'Mozilla/5.0 (compatible; mytestapp/1.0; asampat3090@gmail.com)' %>
+        <% #  obj = embedly_api.preview url: article.url  %>
+        <%#=  puts JSON.pretty_generate(obj[0].marshal_dump) %>
+        <a href=<%=article.url%> class="thumbnail">
+          <%= article.title%>
+          <br/>
+          <%= article.summary %>
+        </a>
+      </li>
+    </ul>
+<% end %>
+
+
