@@ -1,5 +1,5 @@
 <% provide(:title, 'Projects') %>
-<h1>Projects</h1>
+<h1 xmlns="http://www.w3.org/1999/html">Projects</h1>
 <h2>Hardware</h2>
 <ul class="thumbnails">
   <li class="span6">
@@ -37,10 +37,23 @@
       <h2>
         Basic Django Web App (not deployed) - Create a One-Pager
       </h2>
-      <p style="text-align:left">Just a small web app to create a one-pager summarizing the tasks and meetings completed over the past week - it still has a long ways to go.
+      <p style="text-align:left">Small web app to create a one-pager summarizing the tasks and meetings completed over the past week. Covers only basic functionality but this is my first Django app - still needs a lot of polishing.
       </p>
       <a>
   </li>
+  <li class="span6">
+    <a href="https://github.com/asampat3090/kayak_weather_chrome_ext" class="thumbnail">
+      <br/>
+      <%= image_tag("projects/sun.png", alt: "cartoon sun", size: "300x300") %>
+      <h2>
+        Warmest Destinations Chrome Extension
+      </h2>
+      <p style="text-align:left">
+        Small Chrome extension to poll Geonames and WeatherBug APIs to find the warmest destinations within a 30 km radius of the destination searched by the user.
+      </p>
+      <a>
+  </li>
+
   <li class="span6">
     <a href="https://github.com/asampat3090/xkcd_screensaver_for_kindle" class="thumbnail">
       <%= image_tag("projects/kindle-xkcd.jpeg", alt: "xkcd on kindle screensaver icon", size: "300x300") %>
@@ -52,6 +65,8 @@
       </p>
     <a>
   </li>
+
+
 </ul>
 
 <p>
