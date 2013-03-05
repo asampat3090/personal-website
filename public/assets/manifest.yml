@@ -35,6 +35,8 @@ projects/one_pager_icon.png: projects/one_pager_icon-3c67b064629b046b1c0639f9d58
 projects/one_pager_icon/index.png: projects/one_pager_icon-3c67b064629b046b1c0639f9d58a4512.png
 projects/pentacene_transistor.png: projects/pentacene_transistor-01619ab716260fa9f292d8b3a08e3d0e.png
 projects/pentacene_transistor/index.png: projects/pentacene_transistor-01619ab716260fa9f292d8b3a08e3d0e.png
+projects/sun.png: projects/sun-b1cca9ccf3cc6b5e30c819e47b2a26f6.png
+projects/sun/index.png: projects/sun-b1cca9ccf3cc6b5e30c819e47b2a26f6.png
 rails.png: rails-e19cc14e7b458337c25b4a0b230d6cac.png
 rails/index.png: rails-e19cc14e7b458337c25b4a0b230d6cac.png
 application.js: application-c29eea63b8050088452061c752eb09e1.js
