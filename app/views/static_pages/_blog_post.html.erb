@@ -1,5 +1,3 @@
-<%= load_blog_feed%>
-
 <% @blog_posts.each do |entry| %>
 <div>
   <a href=<%=entry.url%>><h3 class = "blog"> <%= entry.title %> </h3></a>
