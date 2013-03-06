@@ -6,11 +6,9 @@
         <%   obj = embedly_api.oembed(url: article.url, maxwidth: 450, wmode: 'transparent', method: 'after')  %>
 
         <a href=<%=article.url%> class="thumbnail" target="_blank">
-            <br/>
             <h2><%= obj[0].title%></h2>
-            <br/>
+            <h4 class="text-center"><%=article.published.strftime("%m/%d/%Y at %I:%M%p")%></h4>
             <h4 class="text-center"> <%= image_tag obj[0].provider_url + "/favicon.ico", alt: "provider favicon", size: "64x64" %></h4>
-            <br/>
             <% if obj[0].thumbnail_url != nil %>
             <%= image_tag obj[0].thumbnail_url, alt: obj[0].title %>
             <% end %>
@@ -20,5 +18,6 @@
       </li>
     </ul>
 <% end %>
+
 
 

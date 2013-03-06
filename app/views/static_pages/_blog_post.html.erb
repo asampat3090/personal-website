@@ -1,7 +1,7 @@
 <% @blog_posts.each do |entry| %>
 <div>
   <a href=<%=entry.url%>><h3 class = "blog"> <%= entry.title %> </h3></a>
-  <h4><%=entry.published.strftime("%m/%d/%Y at %I:%M%p")%></h6>
+  <h4><%=entry.published.strftime("%m/%d/%Y at %I:%M%p")%></h4>
   <br />
   <!-- Twitter Share Button -->
   <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
