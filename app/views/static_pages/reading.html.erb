@@ -1,8 +1,11 @@
 <% provide(:title, 'Current Reading') %>
 <h1>My Reading</h1>
-<div class="page">
-  <% load_reading_feed(0, 2) %><%= render partial: "articles" %>
-</div>
+<body id="list">
+  <% load_reading_feed(0, 3) %>
+  <%= render partial: "articles" %>
+</body>
+
+
 
 
 

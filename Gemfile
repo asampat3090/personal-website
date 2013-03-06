@@ -5,6 +5,9 @@ gem 'bootstrap-sass', '2.1'
 gem 'feedzirra'
 gem 'embedly'
 
+# pagination
+gem 'will_paginate', '~> 3.0'
+
 # check performance with newrelic
 gem 'newrelic_rpm'
 
