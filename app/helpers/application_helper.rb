@@ -23,7 +23,7 @@ module ApplicationHelper
   end
 
   def load_reading_feed
-    rfeed = Feedzirra::Feed.fetch_and_parse("http://getpocket.com/users/anand.sampat/feed/read");
+    rfeed = Feedzirra::Feed.fetch_and_parse("http://getpocket.com/users/anand.sampat/feed/unread");
     unless rfeed.is_a?(Fixnum)
       @rfeed_title = rfeed.title;
       @articles = rfeed.entries[0...10]; nil
