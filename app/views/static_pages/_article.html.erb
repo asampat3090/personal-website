@@ -5,13 +5,15 @@
         <% embedly_api = Embedly::API.new :key => '8a3c9238c6504b64816fcfc54fc2fa89', :user_agent => 'Mozilla/5.0 (compatible; mytestapp/1.0; asampat3090@gmail.com)' %>
         <%   obj = embedly_api.oembed(url: article.url, maxwidth: 450, wmode: 'transparent', method: 'after')  %>
 
-        <a href=<%=article.url%> class="thumbnail">
+        <a href=<%=article.url%> class="thumbnail" target="_blank">
             <br/>
             <h2><%= obj[0].title%></h2>
             <br/>
-            <h4 class="text-center"> <%= image_tag obj[0].provider_url + "/favicon.ico", alt: "provider favicon" %></h4>
+            <h4 class="text-center"> <%= image_tag obj[0].provider_url + "/favicon.ico", alt: "provider favicon", size: "64x64" %></h4>
             <br/>
+            <% if obj[0].thumbnail_url != nil %>
             <%= image_tag obj[0].thumbnail_url, alt: obj[0].title %>
+            <% end %>
             <br/>
             <p><%= obj[0].description %> </p>
         </a>
