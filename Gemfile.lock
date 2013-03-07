@@ -92,6 +92,8 @@ GEM
     oauth (0.4.7)
     pg (0.12.2)
     polyglot (0.3.3)
+    prototype-rails (3.2.1)
+      rails (~> 3.2)
     querystring (0.1.0)
     rack (1.4.1)
     rack-cache (1.2)
@@ -179,6 +181,7 @@ DEPENDENCIES
   jquery-rails (= 2.0.2)
   newrelic_rpm
   pg (= 0.12.2)
+  prototype-rails
   rails
   rspec-rails (= 2.11.0)
   sass-rails (= 3.2.5)

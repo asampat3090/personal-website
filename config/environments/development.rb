@@ -48,4 +48,7 @@ AnandSampat::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  # prototype-rails provides Prototype, Scriptaculous, and RJS for Rails 3.1
+  # config.action_view.debug_rjs = true
 end

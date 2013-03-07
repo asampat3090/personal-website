@@ -1,9 +1,12 @@
 <% provide(:title, 'Current Reading') %>
-<h1>My Reading</h1>
-<body id="list">
-  <% load_reading_feed(0, 3) %>
+<% load_reading_feed(0, 20) %>
+<% @articles = @articles.paginate(:page => params[:page], :per_page => 5) %>
+<% javascript :defaults, 'endless_page' %>
+<h1>My Current Reading</h1>
+<div id="articles">
   <%= render partial: "articles" %>
-</body>
+</div>
+<h4 class="text-center"><%= will_paginate @articles %></h4>
 
 
 
