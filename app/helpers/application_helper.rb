@@ -25,7 +25,7 @@ module ApplicationHelper
   def load_reading_feed num1, num2
     rfeed = Feedzirra::Feed.fetch_and_parse("http://getpocket.com/users/anand.sampat/feed/all");
     unless rfeed.is_a?(Fixnum)
-      @rfeed_title = rfeed.title;
+      @rfeed_title = rfeed.title.sanitize;
       @articles = rfeed.entries[num1, num2]; nil
     else
       @articles = []
