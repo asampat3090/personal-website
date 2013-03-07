@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="544531fc-4cdc-4cda-8876-410e90bc2bc8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/reading.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/reading.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/_articles.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/_articles.html.erb" />
     </list>
     <ignored path="anand_sampat.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,10 +31,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_articles.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_articles.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/static_pages/_articles.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="47" selection-start="395" selection-end="395" vertical-scroll-proportion="-3.84">
+            <state line="1" column="40" selection-start="57" selection-end="57" vertical-scroll-proportion="0.023188407">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_blog_post.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/static_pages/_blog_post.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="2" selection-start="676" selection-end="748" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -48,10 +58,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reading.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="reading.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/static_pages/reading.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="76" selection-start="148" selection-end="148" vertical-scroll-proportion="0.045519203">
+            <state line="5" column="37" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -112,7 +122,6 @@
         <option value="$PROJECT_DIR$/app/views/static_pages/_blog_post.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/_article.html.erb" />
         <option value="$PROJECT_DIR$/public/javascripts/endless_scroll.js" />
-        <option value="$PROJECT_DIR$/app/views/static_pages/_articles.html.erb" />
         <option value="$PROJECT_DIR$/config/initializers/will_paginate_array_fix.rb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/reading.js.rjs" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
@@ -122,6 +131,7 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/reading.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/static_pages/_articles.html.erb" />
       </list>
     </option>
   </component>
@@ -156,6 +166,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -622,8 +634,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -949,7 +959,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20444763" sideWeight="0.66151863" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21018651" sideWeight="0.66151863" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33848134" sideWeight="0.5581062" order="7" side_tool="true" content_ui="tabs" />
@@ -1018,13 +1028,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="4" selection-start="1916" selection-end="1916" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/static_pages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="13" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
@@ -1114,16 +1117,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_pages/_articles.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/static_pages/reading.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="47" selection-start="395" selection-end="395" vertical-scroll-proportion="-3.84">
+        <state line="5" column="37" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_pages/reading.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/static_pages/_blog_post.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="76" selection-start="148" selection-end="148" vertical-scroll-proportion="0.045519203">
+        <state line="13" column="2" selection-start="676" selection-end="748" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_pages/_articles.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="40" selection-start="57" selection-end="57" vertical-scroll-proportion="0.023188407">
           <folding />
         </state>
       </provider>

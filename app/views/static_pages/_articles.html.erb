@@ -7,7 +7,7 @@
 
         <a href=<%=article.url%> class="thumbnail" target="_blank">
             <h2><%= obj[0].title%></h2>
-            <h4 class="text-center"><%=article.published.strftime("%m/%d/%Y at %I:%M%p")%></h4>
+            <h4 class="text-center"><%=(article.published + Time.zone_offset('PST')).strftime("%m/%d/%Y at %I:%M%p")%></h4>
             <h4 class="text-center"> <%= image_tag obj[0].provider_url + "/favicon.ico", alt: "provider favicon", size: "64x64" %></h4>
             <% if obj[0].thumbnail_url != nil %>
             <%= image_tag obj[0].thumbnail_url, alt: obj[0].title %>
