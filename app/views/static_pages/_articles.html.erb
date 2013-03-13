@@ -1,4 +1,5 @@
 <% require 'embedly' %>
+<% require 'mechanize' %>
 <% @articles.each do |article| %>
     <ul class="thumbnails">
       <li class="span12">
@@ -9,7 +10,9 @@
             <h2><%= obj[0].title%></h2>
             <h4 class="text-center"><%=(article.published + Time.zone_offset('PST')).strftime("%m/%d/%Y at %I:%M%p")%></h4>
             <% img_url = obj[0].provider_url + "/favicon.ico" %>
-            <% res = Net::HTTP.get_response(URI.parse(img_url)) %>
+            <% agent = Mechanize.new %>
+            <% res = agent.get(URI.parse(img_url)) %>
+            <%# res = Net::HTTP.get_response(URI.parse(img_url)) %>
             <% img_url = '' unless res.code.to_i >= 200 && res.code.to_i < 400 #good codes will be betweem 200 - 399 %>
             <% if img_url != '' %>
                 <h4 class="text-center"> <%= image_tag img_url, alt: "provider favicon", size: "64x64" %></h4>

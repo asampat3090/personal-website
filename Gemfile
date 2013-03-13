@@ -5,6 +5,9 @@ gem 'bootstrap-sass', '2.1'
 gem 'feedzirra'
 gem 'embedly'
 
+# handle https connections
+gem 'mechanize'
+
 # pagination
 gem 'will_paginate', '~> 3.0'
 
