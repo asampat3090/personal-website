@@ -80,7 +80,4 @@ AnandSampat::Application.configure do
       :enable_starttls_auto => true
   }
 
- # add Google Analytics tracker cod
-  GA.tracker = "UA-41025297-1"
- 
 end
