@@ -8,6 +8,9 @@
     <%= csrf_meta_tags %>
     <%= render 'layouts/shim' %>
     <%= analytics_init if Rails.env.production? %>
+    <meta charset="utf-8">
+    <% setup_meta_tags_params %>
+    <%= display_meta_tags %>
   </head>
   <body>
     <%= render 'layouts/header' %>

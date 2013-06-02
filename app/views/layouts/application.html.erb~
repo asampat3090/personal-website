@@ -7,6 +7,9 @@
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
     <%= render 'layouts/shim' %>
+    <%= analytics_init if Rails.env.production? %>
+    <meta charset="utf-8">
+    <%= display_meta_tags :site => 'Anand Sampat', :keywords => Metatags::KEYWORDS %>
   </head>
   <body>
     <%= render 'layouts/header' %>

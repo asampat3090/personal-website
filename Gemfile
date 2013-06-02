@@ -14,6 +14,9 @@ gem 'will_paginate', '~> 3.0'
 # add google analytics to website
 gem 'google-analytics-rails'
 
+# add meta tags for SEO to website
+gem 'meta-tags', :require => 'meta_tags'
+
 # check performance with newrelic
 gem 'newrelic_rpm'
 
