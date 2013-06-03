@@ -1,5 +1,6 @@
 <% provide(:title, 'Current Reading') %>
-<% load_reading_feed(0, 20) %>
+<% load_reading_feed %>
+<% @articles = Article.all %>
 <% @articles = @articles.paginate(:page => params[:page], :per_page => 5) %>
 <h1>My Current Reading</h1>
 <div id="articles">
