@@ -1,14 +1,9 @@
 <% provide(:title, 'Current Reading') %>
 <% load_reading_feed %>
-<% @articles = Article.all %>
+<% @articles = Article.order("created_at DESC") %>
 <% @articles = @articles.paginate(:page => params[:page], :per_page => 5) %>
 <h1>My Current Reading</h1>
 <div id="articles">
   <%= render partial: "articles" %>
 </div>
 <h4 class="text-center"><%= will_paginate @articles %></h4>
-
-
-
-
-
