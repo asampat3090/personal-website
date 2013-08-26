@@ -11,7 +11,14 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
-//= require jquery_ujs
+//= require jquery_ujs	
 //= require bootstrap
 //= require_tree
 
+$(document).ready(function() {
+  $('a.hook').bind('inview', function(e,visible) {
+    if( visible ) {
+      $.getScript($(this).attr("href"));
+    }
+  });
+});

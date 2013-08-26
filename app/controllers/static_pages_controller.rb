@@ -1,4 +1,5 @@
 class StaticPagesController < ApplicationController
+  
   def home
   end
 
@@ -9,6 +10,11 @@ class StaticPagesController < ApplicationController
   end
 
   def reading
+    @articles = Article.order("created_at DESC").paginate(:page => params[:page], :per_page => 5)
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
   
   def contact
