@@ -24,6 +24,8 @@ AnandSampat::Application.routes.draw do
 
   match '/reading', to:'static_pages#reading'
 
+  match '/book_reading', to: 'static_pages#book_reading'
+
   match '/resume' => redirect('https://docs.google.com/file/d/0B_j1yTxBbZYAUTNyNGl3eldWNTg/edit'), :as => :resume
 
   #match '/blog', to: 'http://anandsampat.com'

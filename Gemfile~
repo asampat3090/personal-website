@@ -1,9 +1,13 @@
 source 'https://rubygems.org'
 
 gem 'rails'
+ruby "1.9.3"
 gem 'bootstrap-sass', '2.1'
 gem 'feedzirra'
 gem 'embedly'
+gem 'rubyzip'
+
+gem 'actionmailer', '~>0.6.1'
 
 # handle https connections
 gem 'mechanize'
@@ -13,6 +17,9 @@ gem 'will_paginate', '~> 3.0'
 
 # add google analytics to website
 gem 'google-analytics-rails'
+
+# add meta tags for SEO to website
+gem 'meta-tags', :require => 'meta_tags'
 
 # check performance with newrelic
 gem 'newrelic_rpm'

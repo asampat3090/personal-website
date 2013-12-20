@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130603054204) do
+ActiveRecord::Schema.define(:version => 20131220185501) do
 
   create_table "articles", :force => true do |t|
     t.string   "url"
@@ -23,6 +23,9 @@ ActiveRecord::Schema.define(:version => 20130603054204) do
     t.integer "article_id"
     t.integer "category_id"
   end
+
+# Could not dump table "books" because of following StandardError
+#   Unknown type 'array' for column 'shelves'
 
   create_table "categories", :force => true do |t|
     t.string   "name"
