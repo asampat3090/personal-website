@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails'
-ruby "1.9.3"
 gem 'bootstrap-sass', '2.1'
 gem 'feedzirra'
 gem 'embedly'
@@ -50,4 +49,5 @@ end
 
 group :production do
   gem 'pg', '0.12.2'
+  gem 'rails_12factor'
 end
