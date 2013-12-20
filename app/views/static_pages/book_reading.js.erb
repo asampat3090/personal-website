@@ -1,0 +1,6 @@
+<% if @books_read.all.count>0 -%>
+$('#books_read').append('<%= escape_javascript(render(partial: 'books_read')) %>');
+$('a.book_hook').attr('href', '<%= book_reading_path(page: (params[:page].to_i || 1)+1, per_page: params[:per_page] || 5) %>').show();
+<% else -%>
+$('a.book_hook').hide();
+<% end -%>

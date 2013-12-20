@@ -1,0 +1,9 @@
+<% provide(:title, "Books") %>
+<% load_book_feed %>
+
+<h1>Current Books</h1>
+<div id="books_read"><%= render partial: 'books_read' %></div>
+<% if params[:page].to_i==0 %>
+<% params[:page]=1 %>
+<% end %>
+<%= link_to 'Load More', book_reading_path(page: (params[:page].to_i || 1)+1, per_page: params[:per_page] || 5), class: 'book_hook', remote: true %>
