@@ -8,6 +8,7 @@ require "action_controller/railtie"
 require "action_mailer"
 require "active_resource"
 require "sprockets/railtie"
+require "open-uri"
 # require "rails/test_unit/railtie"
 
 if defined?(Bundler)

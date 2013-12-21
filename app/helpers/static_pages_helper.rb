@@ -34,7 +34,7 @@ module StaticPagesHelper
     # secret: 8N6IxNhOFAyPJHEQkc7QJIMj9qCIo1DVIxknWFIE
     require 'open-uri'
     # Get all of the read books from Goodreads
-    xml_feed = Nokogiri::XML(open("https://www.goodreads.com/review/list?format=xml&v=2&key=xIgnxTVcHqymrVEy1Nmcg&id=25848331&shelf=read"))
+    xml_feed = Nokogiri::XML(open("https://www.goodreads.com/review/list?format=xml&v=2&key=xIgnxTVcHqymrVEy1Nmcg&id=25848331&shelf=read", "User-Agent" => "ruby"))
     book_reviews = xml_feed.xpath("//reviews/review")
     # Loop through each of the book reviews 
     book_reviews.each do |review|
