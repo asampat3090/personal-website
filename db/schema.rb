@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131220234536) do
+ActiveRecord::Schema.define(:version => 20131221001642) do
 
   create_table "articles", :force => true do |t|
     t.string   "url"
@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(:version => 20131220234536) do
     t.integer  "publication_day"
     t.integer  "publication_year"
     t.integer  "publication_month"
-    t.integer  "average_rating"
+    t.float    "average_rating"
     t.text     "description"
     t.text     "authors"
     t.text     "shelves"

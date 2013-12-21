@@ -7,9 +7,12 @@
 
         <a href=<%=book_read.link%> class="thumbnail" target="_blank">
             <h2><%= book_read.title%></h2>
-			<% if book_read.created_at != nil %>
+            <h4 class="text-center">Average Rating: <%= book_read.average_rating%></h4>
+			<!--
+            <% if book_read.created_at != nil %>
             	<h4 class="text-center"><%=(book_read.created_at + Time.zone_offset('PST')).strftime("%m/%d/%Y at %I:%M%p")%></h4>
 			<%end%>
+            -->
 			<% if book_read.image_url != nil %>
             	<%= image_tag book_read.image_url, alt: book_read.title %>
 			<% end %>

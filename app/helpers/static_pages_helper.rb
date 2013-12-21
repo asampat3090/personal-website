@@ -46,7 +46,7 @@ module StaticPagesHelper
       publication_day = review.xpath("book/publication_day").text.to_i
       publication_year = review.xpath("book/publication_year").text.to_i
       publication_month = review.xpath("book/publication_month").text.to_i
-      average_rating = review.xpath("book/average_rating").text.to_i
+      average_rating = review.xpath("book/average_rating").text.to_f
       description = review.xpath("book/description").text
       description = Nokogiri::HTML(description).text
       authors = [review.xpath("book/authors").children.map{|author_arr| author_arr.children.map{|attr| attr.text}}[3]]
