@@ -26,4 +26,35 @@ module StaticPagesHelper
       end
     end
   end
+
+  # book reading page helper function
+  def load_book_feed
+    # Use the Goodreads API to access my personal public profile
+    # key: xIgnxTVcHqymrVEy1Nmcg
+    # secret: 8N6IxNhOFAyPJHEQkc7QJIMj9qCIo1DVIxknWFIE
+    require 'open-uri'
+    # Get all of the read books from Goodreads
+    xml_feed = Nokogiri::XML(open("https://www.goodreads.com/review/list?format=xml&v=2&key=xIgnxTVcHqymrVEy1Nmcg&id=25848331&shelf=read", "User-Agent" => "ruby"))
+    book_reviews = xml_feed.xpath("//reviews/review")
+    # Loop through each of the book reviews 
+    book_reviews.each do |review|
+      isbn = review.xpath("book/isbn").text.to_i
+      title = review.xpath("book/title").text
+      image_url = review.xpath("book/image_url").text
+      link = review.xpath("book/link").text
+      num_pages = review.xpath("book/num_pages").text.to_i
+      publication_day = review.xpath("book/publication_day").text.to_i
+      publication_year = review.xpath("book/publication_year").text.to_i
+      publication_month = review.xpath("book/publication_month").text.to_i
+      average_rating = review.xpath("book/average_rating").text.to_f
+      description = review.xpath("book/description").text
+      description = Nokogiri::HTML(description).text
+      authors = [review.xpath("book/authors").children.map{|author_arr| author_arr.children.map{|attr| attr.text}}[3]]
+      shelves = ["read"]
+      # Add this book to the database
+      if !Book.exists?(isbn: isbn)
+        Book.create(isbn:isbn,title:title,image_url:image_url,link:link,num_pages:num_pages,publication_day:publication_day,publication_year:publication_year,publication_month:publication_month,average_rating:average_rating,description:description,authors:authors,shelves:shelves)
+      end      
+    end  
+  end
 end

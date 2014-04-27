@@ -8,8 +8,9 @@
         <li class="<%= 'active' if current_page?(about_path) %>"><%= link_to "About", about_path %></li>
         <li class="<%= 'active' if current_page?(projects_path) %>"><%= link_to "Projects", projects_path %></li>
         <li class="<%= 'active' if current_page?(resume_path) %>"><%= link_to "Resume", resume_path %></li>
-        <li class="<%= 'active' if current_page?(reading_path) %>"><%=  link_to "Current Reading", reading_path %></li>
-        <li class="<%= 'active' if current_page?(contact_path) %>"><%= link_to "Contact Me", contact_path %></li>
+        <li class="<%= 'active' if current_page?(book_reading_path) %>"><%=  link_to "Books I'm Reading", book_reading_path %></li>
+        <li class="<%= 'active' if current_page?(reading_path) %>"><%=  link_to "Articles I'm Reading", reading_path %></li>
+        <!--<li class="<%= 'active' if current_page?(contact_path) %>"><%= link_to "Contact Me", contact_path %></li> -->
         <li class="<%= 'active' if current_page?(blog_path) %>"><%= link_to "Blog", blog_path %></li>
       </ul>
     </div>

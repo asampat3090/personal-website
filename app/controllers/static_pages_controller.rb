@@ -16,6 +16,10 @@ class StaticPagesController < ApplicationController
       format.js
     end
   end
+
+  def book_reading
+    @books_read = Book.order("publication_year DESC").paginate(:page => params[:page], :per_page => 5)
+  end
   
   def contact
   end
